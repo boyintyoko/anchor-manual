@@ -1,7 +1,6 @@
 import fs from "fs"
 import path from "path"
 import Image from "next/image"
-import Title from "@/components/title"
 
 type LaundryItem = {
   file: string
@@ -20,7 +19,9 @@ export default function Laundry() {
 
   return (
     <div className="mx-auto max-w-7xl px-6 py-8">
-      <Title title="Laundry Room" />
+      <h1 className="text-3xl font-bold">
+        洗濯物
+      </h1>
 
       <div className="mt-8 space-y-10">
         {floors.map((floor) => {
